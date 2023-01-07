@@ -77,6 +77,7 @@
     <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signin.css">
 
     <script defer src="../js/common.js"></script>
 
@@ -420,7 +421,36 @@
       </div>
     </header>
 
-    <section class="signin"></section>
+    <section class="signin">
+      <h1>로그인</h1>
+      <div class="signin__card">
+          <h2>
+            <!-- strong 이라는 태그는 뭔가 강조하고 싶은 글자를 묶어주는 태그이다 -->
+          <strong>Welcome!</strong> 스타벅스에 오신 것을 환영합니다
+          </h2>
+        
+        <!-- 입력 양식을 만들어내는 태그가 action이다 -->
+        <!-- action 폼태그 내부에 입력하는 양식이 어떤 주소로 데이터가 전송될것인가에 대한 특정 주소를 입력할수있다! -->
+        <!-- 지금은 form 을 사용하지않지만 기능적인 구조를 설명하자면 -->
+        <!-- form 태그안에 있는 submit 을 누르게 되면 form태그 안에 있는 정보들을 어딘가의 서버로 전송해주는 역활을 해주는것이다 -->
+        <form>
+          <!-- input 무엇인가를 입력할때 쓰는 태그 이며 type부분에 다양한 기능들이 있다  -->
+          <!-- 기능을 확인한후 자기가 맞는걸 쓰면 된다 -->
+          <!-- placeholder 는 input 박스안에 디폴트로 들어가있는 문자들을 말한다! -->
+          <input type="text" placeholder="아이디를 입력하세요.">
+          <input type="password" placeholder="비밀번호를 입력하세요.">
+          <!-- submit은 제출에 의사를 묻는 타입이다 "확인"을 마우스로 누를때 확인 부분이 submit 이것이다 -->
+          <!-- value 부분은 말 그대로 값이다 제출할떄의 버튼의 이름은 "로그인"이다 라는 뜻이다 -->
+          <input type="submit" value="로그인">
+          <p>* 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br /> 정기적으로 비밀번호를 변경하세요!</p>
+        </form>
+        <div class="actions">
+          <a href="javascript:void(0)">회원가입</a>
+          <a href="javascript:void(0)">아이디 찾기</a>
+          <a href="javascript:void(0)">비밀번호 찾기</a>
+        </div>
+      </div>
+    </section>
 
   
 
